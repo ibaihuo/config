@@ -1,0 +1,17 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Filename:      .emacs
+;;                
+;; Copyright (C) 2012,  renewjoy
+;; Version:       
+;; Author:        renewjoy <oyea9le@gmail.com>
+;; Created at:    Fri Mar 30 14:24:56 2012
+;;                
+;; Description:   
+;;                
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; add load-path
+;; 把~/.emacs.d/elisp加到load-path，里面放置添加的扩展插件
+(setq load-path (cons "~/.emacs.d/elisp" load-path))
+
+;; 按顺序加载所有的配置文件
+(mapc 'load (directory-files "~/.emacs.d/myconfig" t "\\.el$"))
