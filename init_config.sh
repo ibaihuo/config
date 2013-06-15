@@ -8,7 +8,7 @@
 ## Created at:    Sat Jun 15 22:51:46 2013
 ##                
 ## Modified by:   renewjoy <oyea9le@gmail.com>
-## Modified at:   Sat Jun 15 23:20:20 2013
+## Modified at:   Sun Jun 16 00:02:14 2013
 ## Description:   初始化配置文件
 ##                
 ######################################################################
@@ -35,3 +35,7 @@ ln -s ${working_dir}/qtile/config.py ~/.i3/config
 rm -rf ~/.zshrc ~/.oh-my-zsh
 ln -s ${working_dir}/zsh/zshrc ~/.zshrc
 ln -s ${working_dir}/zsh/oh-my-zsh ~/.oh-my-zsh
+
+# git
+rm -rf ~/.gitconfig
+ln -s ${working_dir}/git/gitconfig ~/.gitconfig
