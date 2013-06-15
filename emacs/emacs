@@ -6,9 +6,10 @@
 ;; Author:        renewjoy <oyea9le@gmail.com>
 ;; Created at:    Fri Mar 30 14:24:56 2012
 ;;                
-;; Description:   
+;; Description:   总的配置文件
 ;;                
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; add load-path
 ;; 把~/.emacs.d/elisp加到load-path，里面放置添加的扩展插件
 (setq load-path (cons "~/.emacs.d/elisp" load-path))

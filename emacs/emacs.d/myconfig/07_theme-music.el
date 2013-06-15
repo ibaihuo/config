@@ -1,6 +1,6 @@
 ;; ================================================================================
 ;; emms的配置文件,播放mp3
-(add-to-list 'load-path "~/.emacs.d/elisp/emms/")
+(add-to-list 'load-path "~/.emacs.d/plugins/emms/")
 (require 'emms-setup)
 (emms-standard)
 ;; (emms-default-players)

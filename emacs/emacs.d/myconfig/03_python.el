@@ -1,9 +1,16 @@
 ;; 自动将py后缀的文件和python-mode关联
 (setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
 (setq interpreter-mode-alist (cons '("python" . python-mode) interpreter-mode-alist))
-(setq py-indent-offset 4)		;自定义缩进为4
 (autoload 'python-mode "python-mode" "Python editing mode." t)
+
+;; (setq py-indent-offset 4)		;自定义缩进为4
+;; 兼容公司的TAB设置
+(add-hook 'python-mode-hook
+  (lambda () (setq indent-tabs-mode t)))
+
 (setq py-shell-name 'ipython)
+
+;; 调用pdb
 (global-set-key (kbd "C-c p") 'pdb)
 
 ;; (load "~/.emacs.d/plugins/color-theme-molokai.el")
@@ -21,7 +28,6 @@
   )
 
 (add-hook 'python-hook 'my-python-mode-hook)
-
 
 ;; for pymacs
 ;; (autoload 'pymacs-apply "pymacs")
