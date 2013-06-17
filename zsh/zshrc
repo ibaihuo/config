@@ -247,6 +247,18 @@ bindkey "\t" user-complete
 #定义快捷键为： [Esc] [Esc]
 #bindkey "\e\e" sudo-command-line
 #}}}
+
+# 使用emacsclient 的时候，如果emacs --daemon没有启动，下面这行自动启动
+export ALTERNATE_EDITOR=""
+
+# 设置默认编辑器
+export EDITOR='emacsclient -t'
+
+# 定义别名
+#alias -g e='emacs -nw'
+alias -g e='emacsclient -t'
+
+
  
 #命令别名 {{{
 # 下面是非人性化的设置，当你在一台没有进行如下设置的机器上，误删除文件就明白了
@@ -260,8 +272,6 @@ alias -g la='ls -a'
 
 alias -g grep='grep --color=auto'
 
-#alias -g e='emacs -nw'
-alias -g e='emacsclient -t'
 
 alias -g chrome='/opt/google/chrome/chrome'
 #alias -g tk='tmux kill-server'
@@ -281,16 +291,15 @@ alias top10='print -l  ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
 
 #路径别名 {{{
 #进入相应的路径时只要 cd ~xxx
-#hash -d WWW="/home/lighttpd/html"
+
+hash -d github='/home/renewjoy/Documents/github/'
+
 #hash -d ARCH="/mnt/arch"
 #hash -d PKG="/var/cache/pacman/pkg"
 #hash -d E="/etc/env.d"
 #hash -d C="/etc/conf.d"
 #hash -d I="/etc/rc.d"
 #hash -d X="/etc/X11"
-#hash -d BK="/home/r00t/config_bak"
-hash -d lc="/home/leo/dev/learnC"
-hash -d di="/home/leo/文档/日记"
 #}}}
    
 ##afor Emacs {{{
@@ -344,6 +353,7 @@ export PATH=$PATH:/usr/local/nodejs/bin
 
 # for chrome
 export PATH=$PATH:/opt/google/chrome/
+
 
 
 # 在freemind， yEd中输入中文

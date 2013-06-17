@@ -29,7 +29,7 @@ ln -s ${working_dir}/qtile/config.py ~/.config/qtile/config.py
 
 # i3 
 rm -rf ~/.i3/config
-ln -s ${working_dir}/qtile/config.py ~/.i3/config
+ln -s ${working_dir}/i3/config ~/.i3/config
 
 # zsh
 rm -rf ~/.zshrc ~/.oh-my-zsh
