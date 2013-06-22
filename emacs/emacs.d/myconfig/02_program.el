@@ -1,5 +1,5 @@
 (setq default-tab-width 4)
-;;(setq tab-width 4)
+(setq tab-width 4)
 (setq tab-stop-list ())
 
 ;; 用空格来代替tab（在python中非常必要）
@@ -94,7 +94,7 @@
     (next-line 1)
     (transpose-lines n)
     (previous-line 1)
-    (forward-char col)))
+    (move-to-column col)))
 (defun move-line-up (n)
   "Moves current line N (1) lines up leaving point in place."
   (interactive "p")
@@ -204,3 +204,11 @@ If ARG is non-numeric, copy line from beginning of the current line."
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
+
+
+
+;; for visual-regexp
+;; https://github.com/benma/visual-regexp.el.git
+;; (require 'visual-regexp)
+;; (define-key global-map (kbd "C-c r") 'vr/replace)
+;; (define-key global-map (kbd "C-c q") 'vr/query-replace)
