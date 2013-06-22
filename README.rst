@@ -20,10 +20,11 @@
 
 
 #. 平铺式窗口管理器：qtile
-    特点:
 
-    1. 纯python实现的
-    3. 用python配置
+   特点:
+
+   1. 纯python实现的
+   #. 用python配置
 
 #. zsh, 号称终极shell, 配合oh-my-zsh使用，超级无敌
 
@@ -34,4 +35,6 @@
 建立符号链接：
 
 .. code-block:: bash
+
    bash init_config.sh
+
