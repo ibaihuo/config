@@ -19,7 +19,8 @@ font -wenquanyi-wenquanyi bitmap song-medium-r-normal--0-0-75-75-p-0-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -83,14 +84,14 @@ bindsym $mod+space focus mode_toggle
 #bindcode $mod+d focus child
 
 # switch to workspace
-bindsym $mod+a workspace A:Terminal
-bindsym $mod+s workspace S:WEB
-bindsym $mod+d workspace D:XP
-bindsym $mod+f workspace F:Backend
-bindsym $mod+u workspace U:
-bindsym $mod+i workspace I:
-bindsym $mod+o workspace O:
-bindsym $mod+p workspace P:
+bindsym $mod+a workspace A:all
+bindsym $mod+s workspace S:server
+bindsym $mod+d workspace D:doc
+bindsym $mod+f workspace F:fchrome
+bindsym $mod+u workspace U:udo
+bindsym $mod+i workspace I:ifor
+bindsym $mod+o workspace O:open
+bindsym $mod+p workspace P:pX3
 
 
 # move focused container to workspace

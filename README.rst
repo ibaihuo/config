@@ -28,6 +28,7 @@
 
 #. zsh, 号称终极shell, 配合oh-my-zsh使用，超级无敌
 
+#. funtoo, 主要是make.conf和pa
 
 初始化
 ++++++

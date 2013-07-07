@@ -1,0 +1,4 @@
+sys-kernel/debian-sources binary
+x11-apps/xinit -minimal
+app-editors/emacs -X -gtk3
+>=sys-devel/gcc-4.6.3:4.6 objc

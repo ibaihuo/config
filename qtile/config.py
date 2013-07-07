@@ -9,7 +9,7 @@
 ## Created at:	Fri May 17 22:39:38 2013
 ##				
 ## Modified by:   renewjoy <oyea9le@gmail.com>
-## Modified at:   Sun May 26 02:51:16 2013
+## Modified at:   Sat Jul  6 14:10:05 2013
 ## Description:   qtile配置文件
 ##				
 ######################################################################
@@ -163,13 +163,13 @@ screens = [Screen(
 					   discharge_char = u'↓',
 					   ),
 				   widget.Sep(),
-				   widget.Wlan(),
+				   #widget.Wlan(),
 				   widget.Sep(),
 				   widget.Notify(),		   # 通知
 				   widget.Sep(),
 				   widget.Systray(),	   # 托盘
 				   widget.Sep(),
-				   widget.CurrentLayout(), # 当前而已名称
+				   widget.CurrentLayout(), # 当前布局名称
 				   widget.Sep(),
 				   widget.Clock(foreground = "a0a0a0",fmt = '%Y-%m-%d %a %H:%M:%S'), # 时钟
 				   ],

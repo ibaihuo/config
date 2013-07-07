@@ -354,9 +354,9 @@ export PATH=$PATH:/usr/local/nodejs/bin
 # for chrome
 export PATH=$PATH:/opt/google/chrome/
 
-
-
 # 在freemind， yEd中输入中文
-export XMODIFIERS=@im=fcitx
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=xim
+# export XMODIFIERS=@im=fcitx
+# export GTK_IM_MODULE=fcitx
+# export QT_IM_MODULE=xim
+
+export TERMINAL=gnome-terminal

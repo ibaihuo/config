@@ -8,7 +8,7 @@
 ## Created at:    Sat Jun 15 22:51:46 2013
 ##                
 ## Modified by:   renewjoy <oyea9le@gmail.com>
-## Modified at:   Sun Jun 16 00:02:14 2013
+## Modified at:   Sun Jul  7 21:34:11 2013
 ## Description:   初始化配置文件
 ##                
 ######################################################################
@@ -39,3 +39,11 @@ ln -s ${working_dir}/zsh/oh-my-zsh ~/.oh-my-zsh
 # git
 rm -rf ~/.gitconfig
 ln -s ${working_dir}/git/gitconfig ~/.gitconfig
+
+
+# make.conf and portage
+sudo rm -rf /etc/portage/make.conf
+sudo ln -s ${working_dir}/funtoo/make.conf /etc/portage/make.conf
+
+sudo rm -rf /etc/portage/package.use
+sudo ln -s ${working_dir}/funtoo/package.use /etc/portage/package.use
