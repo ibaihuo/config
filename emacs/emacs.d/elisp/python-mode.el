@@ -1,1 +1,1 @@
-python-mode.el.6.1.1
+python-mode.el.5.10

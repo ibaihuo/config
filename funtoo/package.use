@@ -1,4 +1,10 @@
 sys-kernel/debian-sources binary
 x11-apps/xinit -minimal
 app-editors/emacs -X -gtk3
->=sys-devel/gcc-4.6.3:4.6 objc
+>=sys-devel/gcc-4.6.3:4.6 objc fortran
+>=dev-dotnet/mono-addins-0.6.2 gtk
+>=sys-libs/zlib-1.2.7 minizip
+>=sys-auth/pambase-20120417 consolekit
+=gnome-base/gvfs-1.14.2 udisks
+=sys-auth/consolekit-0.4.5_p20120320-r2 policykit
+=x11-libs/cairo-1.12.16 xcb

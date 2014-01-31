@@ -278,7 +278,6 @@ alias -g chrome='/opt/google/chrome/chrome'
 #哈哈哈，我现在有了byobu
 alias -g tm='tmux'
 alias -g bb='byobu-tmux'
-alias -g x='exit'
 
 
 #[Esc][h] man 当前命令时，显示简短说明 
@@ -354,9 +353,19 @@ export PATH=$PATH:/usr/local/nodejs/bin
 # for chrome
 export PATH=$PATH:/opt/google/chrome/
 
+export PATH=$PATH:/opt/foxit/
+
+# for anaconda
+export PATH="/home/renewjoy/anaconda/bin:$PATH"
+
 # 在freemind， yEd中输入中文
 # export XMODIFIERS=@im=fcitx
 # export GTK_IM_MODULE=fcitx
 # export QT_IM_MODULE=xim
+export XMODIFIERS="@im=fcitx"
+export XIM=fcitx
+export XIM_PROGRAM=fcitx
+export GTK_IM_MODULE=xim
+export QT_IM_MODULE=xim
 
 export TERMINAL=gnome-terminal

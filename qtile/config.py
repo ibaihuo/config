@@ -9,7 +9,7 @@
 ## Created at:	Fri May 17 22:39:38 2013
 ##				
 ## Modified by:   renewjoy <oyea9le@gmail.com>
-## Modified at:   Sat Jul  6 14:10:05 2013
+## Modified at:   Thu Oct  3 21:14:28 2013
 ## Description:   qtile配置文件
 ##				
 ######################################################################
@@ -139,8 +139,8 @@ border = dict(
 #     layout.MonadTall(**border),
 # ]
 layouts = [
-	layout.Max(border_width = 1, border_focus='#ffff00'),						   # 默认最大化布局
-	layout.Stack(stacks = 2, border_width = 1, border_focus='#ffff00') # 设置每个屏幕最多显示的栈数(布局的窗口数目)
+	layout.Max(border_width = 2, border_focus='#ee0000'),						   # 默认最大化布局
+	layout.Stack(stacks = 2, border_width = 2, border_focus='#ee0000') # 设置每个屏幕最多显示的栈数(布局的窗口数目)
 ]
 
 screens = [Screen(
