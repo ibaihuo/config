@@ -1,0 +1,11 @@
+ls
+svn st
+svn diff merge.sh 
+ls
+svn st
+svn ci -m "save hour logs for cobanip."
+svn up
+ls
+less merge.sh 
+ls
+ls

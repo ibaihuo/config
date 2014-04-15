@@ -3,10 +3,11 @@
 (setq interpreter-mode-alist (cons '("python" . python-mode) interpreter-mode-alist))
 (autoload 'python-mode "python-mode" "Python editing mode." t)
 
-;; (setq py-indent-offset 4)		;自定义缩进为4
+(setq py-indent-offset 4)		;自定义缩进为4
+
 ;; 兼容公司的TAB设置
-(add-hook 'python-mode-hook
-  (lambda () (setq indent-tabs-mode t)))
+;; (add-hook 'python-mode-hook
+;;   (lambda () (setq indent-tabs-mode t)))
 
 (setq py-shell-name 'ipython)
 
@@ -16,18 +17,18 @@
 ;; (load "~/.emacs.d/plugins/color-theme-molokai.el")
 ;; (color-theme-molokai)
 
-;; 自定义
-(defun my-python-mode-hook()
-  ;;(color-theme-molokai)
-  ;;(yes/minor-mode)			;为python-mode增加snippet功能
-  ;;(require 'color-theme)
-  ;;(color-theme-initialize)
-  ;;(color-theme-hober)
-  ;;(color-theme-oswald)
-  ;; (color-theme-billw)
-  )
+;; ;; 自定义
+;; (defun my-python-mode-hook()
+;;   ;;(color-theme-molokai)
+;;   ;;(yes/minor-mode)			;为python-mode增加snippet功能
+;;   ;;(require 'color-theme)
+;;   ;;(color-theme-initialize)
+;;   ;;(color-theme-hober)
+;;   ;;(color-theme-oswald)
+;;   ;; (color-theme-billw)
+;;   )
 
-(add-hook 'python-hook 'my-python-mode-hook)
+;; (add-hook 'python-hook 'my-python-mode-hook)
 
 ;; for pymacs
 ;; (autoload 'pymacs-apply "pymacs")
@@ -61,3 +62,7 @@
 ;;    )
   
 ;; (add-hook 'python-mode-hook 'load-ropemacs)
+;; (add-to-list 'load-path "/home/renewjoy/.emacs.d/elisp/python-mode.el-6.1.3") 
+;; (setq py-install-directory "/home/renewjoy/.emacs.d/elisp/python-mode.el-6.1.3")
+;; (require 'python-mode)
+

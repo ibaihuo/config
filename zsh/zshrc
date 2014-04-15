@@ -358,6 +358,9 @@ export PATH=$PATH:/opt/foxit/
 # for anaconda
 export PATH="/home/renewjoy/anaconda/bin:$PATH"
 
+# for spark
+export PATH="/opt/spark/bin:$PATH"
+
 # 在freemind， yEd中输入中文
 # export XMODIFIERS=@im=fcitx
 # export GTK_IM_MODULE=fcitx
