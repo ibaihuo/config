@@ -213,9 +213,9 @@ If ARG is non-numeric, copy line from beginning of the current line."
 ;; (define-key global-map (kbd "C-c r") 'vr/replace)
 ;; (define-key global-map (kbd "C-c q") 'vr/query-replace)
 
-(add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode/")
-(require 'haskell-mode-autoloads)
-(add-to-list 'Info-default-directory-list "~/.emacs.d/elisp/haskell-mode/")
+;; (add-to-list 'load-path "~/.emacs.d/elisp/haskell-mode/")
+;; (require 'haskell-mode-autoloads)
+;; (add-to-list 'Info-default-directory-list "~/.emacs.d/elisp/haskell-mode/")
 
-(add-to-list 'load-path "~/.emacs.d/elisp/scala-mode2/")
-(require 'scala-mode2)
+;; (add-to-list 'load-path "~/.emacs.d/elisp/scala-mode2/")
+;; (require 'scala-mode2)
