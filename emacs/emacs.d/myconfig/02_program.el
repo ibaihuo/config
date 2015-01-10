@@ -205,8 +205,6 @@ If ARG is non-numeric, copy line from beginning of the current line."
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 (add-to-list 'interpreter-mode-alist '("lua" . lua-mode))
 
-
-
 ;; for visual-regexp
 ;; https://github.com/benma/visual-regexp.el.git
 ;; (require 'visual-regexp)
@@ -219,3 +217,8 @@ If ARG is non-numeric, copy line from beginning of the current line."
 
 ;; (add-to-list 'load-path "~/.emacs.d/elisp/scala-mode2/")
 ;; (require 'scala-mode2)
+
+;; go mode
+(add-to-list 'load-path "~/.emacs.d/elisp/go-mode.el")
+(require 'go-mode-autoloads)
+;(add-hook 'before-save-hook 'gofmt-before-save)
