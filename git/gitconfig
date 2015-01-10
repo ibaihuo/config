@@ -3,5 +3,12 @@
 [core]
 	editor = emacs
 [user]
-	email = oyea9le@gmail.com
-	name = renewjoy
+	email = ren.liujiang@ttwx365.com
+	name = ren.liujiang
+[push]
+	default = simple
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
