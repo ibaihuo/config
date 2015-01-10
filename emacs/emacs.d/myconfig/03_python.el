@@ -39,6 +39,7 @@
 
 
 
+
 ;; for ropemacs
 ;; (pymacs-load "ropemacs" "rope-")
 ;; (setq ropemacs-enable-autoimport t)
@@ -66,3 +67,30 @@
 ;; (setq py-install-directory "/home/renewjoy/.emacs.d/elisp/python-mode.el-6.1.3")
 ;; (require 'python-mode)
 
+
+;; 初始化
+(load-file "~/.emacs.d/plugins/emacs-for-python/epy-init.el")
+(require 'epy-setup)      ;; It will setup other loads, it is required!
+(require 'epy-python)     ;; If you want the python facilities [optional]
+(require 'epy-completion) ;; If you want the autocompletion settings [optional]
+(require 'epy-editing)    ;; For configurations related to editing [optional]
+(require 'epy-bindings)   ;; For my suggested keybindings [optional]
+(require 'epy-nose)       ;; For nose integration
+
+;; 拼写检查
+(epy-setup-checker "pyflakes %f")
+
+;; 当前行高亮
+;(global-hl-line-mode t) ;; To enable
+;(set-face-background 'hl-line "LightYellow") ;; change with the color that you like
+                                       ;; for a list of colors: http://raebear.net/comp/emacscolors.html
+
+;; 设置ipython
+(epy-setup-ipython)
+
+;; 符号自动匹配
+;;(setq skeleton-pair nil)
+
+;; 高亮缩进
+(require 'highlight-indentation)
+(add-hook 'python-mode-hook 'highlight-indentation)
