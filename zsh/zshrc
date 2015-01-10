@@ -331,8 +331,6 @@ function timeconv { date -d @$1 +"%Y-%m-%d %T" }
 
 # }}}
 
-export JAVA_HOME=/opt/jdk
-export PATH=$PATH:${JAVA_HOME}/bin
 
 export PATH=$PATH:/opt/dse/bin
 export DSE_HOME=/opt/dse
@@ -353,6 +351,10 @@ export PATH=$PATH:/usr/local/nodejs/bin
 # for chrome
 export PATH=$PATH:/opt/google/chrome/
 
+# 添加mongo
+export PATH=$PATH:~/bin/mongo/bin
+export PATH=$PATH:~/bin/redis/src
+
 export PATH=$PATH:/opt/foxit/
 
 # for anaconda
@@ -360,6 +362,24 @@ export PATH="/home/renewjoy/anaconda/bin:$PATH"
 
 # for spark
 export PATH="/opt/spark/bin:$PATH"
+
+# for java
+export JAVA_HOME=/opt/jdk
+export PATH=${JAVA_HOME}/bin:$PATH
+
+# android adt
+export PATH="/opt/adt/sdk/platform-tools:$PATH"
+# for android tools
+export PATH="/opt/adt/sdk/tools:$PATH"
+# for apache ant
+export PATH="/opt/ant/bin:$PATH"
+
+export PATH=$PATH:/home/renewjoy/bin/Sencha/Cmd/5.0.3.324/
+
+# for golang
+export GOROOT=/usr/local/go
+export GOPATH=~/Templates/Golang
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # 在freemind， yEd中输入中文
 # export XMODIFIERS=@im=fcitx
