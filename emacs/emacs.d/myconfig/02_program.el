@@ -221,4 +221,5 @@ If ARG is non-numeric, copy line from beginning of the current line."
 ;; go mode
 (add-to-list 'load-path "~/.emacs.d/elisp/go-mode.el")
 (require 'go-mode-autoloads)
-;(add-hook 'before-save-hook 'gofmt-before-save)
+;; 保存时自动格式化
+(add-hook 'before-save-hook 'gofmt-before-save)
