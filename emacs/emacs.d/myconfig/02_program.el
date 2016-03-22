@@ -215,8 +215,8 @@ If ARG is non-numeric, copy line from beginning of the current line."
 ;; (require 'haskell-mode-autoloads)
 ;; (add-to-list 'Info-default-directory-list "~/.emacs.d/elisp/haskell-mode/")
 
-;; (add-to-list 'load-path "~/.emacs.d/elisp/scala-mode2/")
-;; (require 'scala-mode2)
+(add-to-list 'load-path "~/.emacs.d/elisp/scala-mode2/")
+(require 'scala-mode2)
 
 ;; go mode
 (add-to-list 'load-path "~/.emacs.d/elisp/go-mode.el")

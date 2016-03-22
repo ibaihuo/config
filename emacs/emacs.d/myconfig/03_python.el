@@ -92,5 +92,5 @@
 ;;(setq skeleton-pair nil)
 
 ;; 高亮缩进
-(require 'highlight-indentation)
-(add-hook 'python-mode-hook 'highlight-indentation)
+;; (require 'highlight-indentation)
+;; (add-hook 'python-mode-hook 'highlight-indentation)
